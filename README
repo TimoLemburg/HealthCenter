@@ -1,0 +1,53 @@
+##############################################
+## HealthCenter for OS X 10.8 & 10.9        ##
+##############################################
+## by Timo Lemburg, November 2013           ##
+##############################################
+## 2013-11-27:                              ##
+## First commit of my HealthCenter script   ##
+##############################################
+## Basic functionality:                     ##
+##   The HealthCenter will display details  ##
+##   about your Mac e.g. for support staff  ##
+##                                          ##
+## You have to provide:                     ##
+##   The GeekTool app (e.g. via AppStore),  ##
+##     I any just using the GeekTool Helper ##
+##     that can be extracted from the       ##
+##     GeekTool application structure.      ##
+##     Change the healthcenter_starter.sh   ##
+##     in /usr/local/healthcenter according ##
+##     to your path to the GeekTool Helper  ##
+##                                          ##
+## For single users:                        ##
+##   Copy the preference files into your    ##
+##     Users Library/Preferences folder     ##
+##   Copy the HealthCenter folder in        ##
+##     usr/local/ to your Mac               ##
+##   Copy the LaunchAgent to your Macs      ##
+##     /Library/LaunchAgents folder and see ##
+##     that is has the correct rights       ##
+##                                          ##
+## For deployment:                          ##
+##   I use a package to deploy the GeekTool ##
+##     Helper to /Applications/Utilities    ##
+##   The package drops the three config     ## 
+##     files to the /tmp folder             ##
+##   The package drops the LaunchAgent into ##
+##     /Library/LaunchAgents and copies the ##
+##     healthcenter folder into /usr/local/ ##
+##   Lastly the healthcenter_setup.sh is    ##
+##     run as a postinstall script to do    ##
+##     following:                           ##
+##       Hide the GeekTool Helper           ##
+##       Copies the preferences to all      ##
+##         existing Users                   ##
+##       Copies the preferences to the      ##
+##         User Templates for English and   ##
+##         German Users (we support both)   ##
+##       Remove the GeekTool Helper from    ##
+##         LaunchPad (another script at     ##
+##         first login does this for new    ##
+##         users, this is not covered here) ##  
+##                                          ##
+##############################################

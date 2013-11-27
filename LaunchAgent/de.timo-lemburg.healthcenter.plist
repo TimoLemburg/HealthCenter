@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>Label</key>
+	<string>de.timo-lemburg.healthcenter</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/healthcenter/healthcenter_starter.sh</string>
+	</array>
+	<key>Disabled</key>
+	<false/>
+</dict>
+</plist>
